@@ -1,9 +1,9 @@
 class Product {
-    _id;
+  _id;
 
-    name;
+  name;
 
-    price;
+  price;
 
-    amt;
+  amt;
 }

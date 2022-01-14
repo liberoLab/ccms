@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import { MongoClient } from 'mongodb';
-import Purchase from 'model/Purchase';
+import Purchase from './model/Purchase';
 
 const app = express();
 const port = 3000;
@@ -46,14 +46,14 @@ app.get('/purchase', async (req, res) => {
   res.json(result);
 });
 /* 단건 조회 (고유 ID를 이용) */
-app.get('/purchase/:purchase_id', async (req, res) => {
-  let { purchase_id } = req.params;
-  purchase_id = parseInt(purchase_id);
+app.get('/purchase/:purchaseId', async (req, res) => {
+  let { purchaseId } = req.params;
+  purchaseId = parseInt(purchaseId, 2);
   await client.connect();
   const result = await client
     .db('ccms')
     .collection('purchase')
-    .findOne({ purchase_id }, {});
+    .findOne({ purchaseId }, {});
   res.json(result);
 });
 
