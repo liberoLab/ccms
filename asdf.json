@@ -1,0 +1,15 @@
+{
+    "purchaseId": 12345,
+    "depositName": "조한솔",
+    "depositDate": "2021-11-08 0:00",
+    "customerName": "조한솔",
+    "customerPnumber": "010-0000-0000",
+    "customerEmail": "choserver@email.com",
+    "customerAddress": "경기 광주시 태전동",
+    "customerAddressDetail": "태전 아파트 1단지 107동 1104호",
+    "customerAddressNumber": "12345",
+    "depositAmount": 12720,
+    "memo": "나다 ",
+    "purchaseCreateDate": "2021-11-08 14:50",
+    "twitterId": "@nada"
+}
