@@ -31,7 +31,7 @@ export async function selectUser(name) {
   const result = await client
     .db('ccms')
     .collection('user')
-    .find({ name }, {})
+    .find({ name: { $regex: name } }, {})
     .toArray();
   return result;
 }
