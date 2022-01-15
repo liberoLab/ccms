@@ -1,8 +1,8 @@
 import express from 'express';
 import Product from '../model/Product.js';
 import {
-  getProductList,
   postProduct,
+  getProductList,
   getProduct,
 } from '../service/ProductService.js';
 

@@ -30,7 +30,6 @@ export async function selectProductList() {
 }
 
 export async function selectProduct(productId) {
-  console.log(productId);
   await client.connect();
   const result = await client
     .db('ccms')
